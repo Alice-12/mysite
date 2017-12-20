@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<link href="bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id='picbox' class="row">
+        <div id='minpic' class="col-xs-6 col-md-3">
+            <a href="#" class="thumbnail">
+                <img src="/韩雪.png" alt="...">
+                <h4 id="wenzi">hello</h4>
+                    </a>
+        </div>
+    </div>
+<script>
+    //$('#picbox').clone().appendTo($('picbox'));
+
+    var fuben=$("#minpic").clone();
+    fuben.find("wenzi").html("yahoo!");
+    fuben.find("wenzi").css({color:"#00A"});
+    fuben.appendTo($("#picbox"));
+</script>
+</body>
+
+
+</html>
